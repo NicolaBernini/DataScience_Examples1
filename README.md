@@ -5,5 +5,6 @@ Examples about Data Science mainly in Python and R
   - Statistics over a given text 
 - [Google Drive Connection](google_drive_connection/)
   - Collection of examples involving connecting to Google Drive 
-  
+- [PDF](pdf/)
+  - Collection of PDF related computing examples 
 
