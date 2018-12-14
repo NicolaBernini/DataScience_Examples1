@@ -1,5 +1,13 @@
+
 # DataScience_Examples1
+
 Examples about Data Science mainly in Python and R 
+
+## Theory 
+
+- [Some Theory related Cheatsheets](cheatsheet)
+
+## Code 
 
 - [Word Counting Related Exercises](word_counting/)
   - Statistics over a given text 
@@ -7,4 +15,7 @@ Examples about Data Science mainly in Python and R
   - Collection of examples involving connecting to Google Drive 
 - [PDF](pdf/)
   - Collection of PDF related computing examples 
+
+
+
 
