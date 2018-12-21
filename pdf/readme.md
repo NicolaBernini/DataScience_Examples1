@@ -2,8 +2,10 @@
 # Overview 
 
 Some examples regarding PDF and the related computation 
-- [PDF Basic1](https://github.com/NicolaBernini/DataScience_Examples1/blob/master/pdf/pdf_basic1.ipynb)
+- [How to represent a PDF in Python Ecosystem - View](https://hackmd.io/jYpJjjipRESanbhOOpKPhQ)
   - Two possible PDF representations are presented: vector pair and callable 
+  - [Notebook](pdf_basic1.ipynb)
+  - [Article Src](pdf_basic1.md)
 
 
 
