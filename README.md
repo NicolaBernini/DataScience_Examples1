@@ -3,6 +3,14 @@
 
 Examples about Data Science mainly in Python and R 
 
+## Updates 
+
+### 2018-12-21 
+
+As I have just realized GitHub does not perform Notebook rendering for mobile requests, I'm adding an HackMD version for some articles 
+
+- Added [PDF in Python - HackMD Version](https://hackmd.io/jYpJjjipRESanbhOOpKPhQ) for [pdf/pdf_basic1.ipynb](pdf/pdf_basic1.ipynb)
+
 ## Theory 
 
 - [Some Theory related Cheatsheets](cheatsheet)
