@@ -1,0 +1,31 @@
+digraph G {
+    label="MLE";
+    labelloc=top;
+    
+  Obs [label="Observation Space \n (Fixed Points)"]; 
+  Lat [label="Latent Space \n (Search here)"]; 
+  Prob1 [label="P(X|T)", shape=box]; 
+  Probability1 [label="Point Prob \n (scalar)"]; 
+  Derivative1 [label="Derivative"]; 
+  
+  MaxTracker [label="Max Tracker", shape=box]; 
+  
+  AbsMax [label="Absolute Max"]; 
+  
+  Lat -> Prob1 [label="Picking T"]; 
+  Obs -> Prob1 [label="Picking X"]; 
+  Prob1 -> Probability1 [label="Return Val"];
+  Prob1 -> Derivative1 [label="Local Deriv"];
+  
+  Probability1 -> MaxTracker [label="Tracking Abs Max"]; 
+  MaxTracker -> AbsMax [label="Eventually Ret Abs Max"]; 
+  
+  Derivative1 -> Lat [label="Step"]; 
+}
+
+
+
+
+
+
+
