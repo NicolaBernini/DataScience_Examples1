@@ -1,0 +1,31 @@
+digraph G {
+    label="Estimation Process";
+    labelloc=top;
+    
+  ObservationSpace [label="Observation Space"]; 
+  Observing [label="Observing", shape=box]; 
+  ObservationsSet [label="Observations Set"]; 
+  Lat [label="Latent Space \n (Search here)"]; 
+  Estim1 [label="Estimation", shape=box]; 
+  ModelSpace [label="Models Space"]; 
+  ModelSelector [label="Model Selector", shape=box]; 
+  ModelSelected [label="Model Selected"]; 
+  
+  MetricsSpace [label="Metrics Space"]; 
+  MetricSelector [label="Metric Selector", shape=box]; 
+  MetricSelected [label="Metric Selected"]; 
+
+  MetricsSpace -> MetricSelector [label="Metrics Picking \n (Prior Choice)"]; 
+  MetricSelector -> MetricSelected [label="Defines Search / Optim \n Process"]; 
+  MetricSelected -> Estim1; 
+  
+  ObservationSpace -> Observing [label="Observing \n Experimenting"]; 
+  Observing -> ObservationsSet [label="Fixed Estim Input"]; 
+  ObservationsSet -> Estim1; 
+  ModelSpace -> ModelSelector [label="Model Picking \n (Prior Choice)"]; 
+  ModelSelector -> ModelSelected [label="Defines LS"]; 
+  ModelSelected -> Estim1; 
+  Estim1 -> Lat [label="LS Point Selection \n (Based on Optimization)"]; 
+
+
+}
