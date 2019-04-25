@@ -41,20 +41,24 @@ class KF:
   def predict(self, u): 
     self.x_pred = F.dot(x) + B.dot(u)
     self.P_pred = F.dot(P.dot(np.transpose(F))) + Q
+      
+  def __innovation(self, y): 
+    return y - self.H.dot(self.x_pred)
 
   def __S(self): 
-    return self.R + self.H.dot(self.P.dot(np.transpose(self.H))) 
+    return self.R + self.H.dot(self.P_pred.dot(np.transpose(self.H))) 
 
   def __K(self): 
-    return self.P.dot(self.H.dot(np.linalg.inv(self.__S())))
+    return self.P_pred.dot(np.transpose(self.H).dot(np.linalg.inv(self.__S())))
 
   def __I(self, A): 
     if(A.shape[0] != A.shape[1]): 
       raise ValueError("[Identity] Not Square")
     return np.identity(A.shape[0])
 
+  
   def update(self, y): 
-    self.x = self.x_pred + self.__K().dot(y)
+    self.x = self.x_pred + self.__K().dot(self.__innovation(y))
     temp = self.__K().dot(self.H)
     self.P = (self.__I(temp) - temp).dot(self.P_pred.dot(np.transpose(self.__I(temp) - temp))) + self.__K().dot(self.R.dot(np.transpose(self.__K()))) 
 
