@@ -5,6 +5,12 @@ Examples about Data Science mainly in Python and R
 
 # Updates 
 
+## 2019-04-26 
+
+Added a [PR](https://github.com/NicolaBernini/DataScience_Examples1/pull/5) to add a [Neural Networks Section](https://github.com/NicolaBernini/DataScience_Examples1/tree/neural_networks_exercise_20190426_1832_1/neural_networks) containing material about Neural Networks features reimplementation from scratch, Neural Networks Foundations and Theory and so on. 
+- Started with a minimal almost zero-dependencies (only NumPy) implmentation of 3 Layers NN for inference only 
+- Backpropagation will be added soon 
+
 ## 2019-04-25 
 
 Added a [PR](https://github.com/NicolaBernini/DataScience_Examples1/pull/4) to add a [Statistics Section](https://github.com/NicolaBernini/DataScience_Examples1/tree/master/statistics) including a [Kalman Filter Implementation in Python and NumPy](https://github.com/NicolaBernini/DataScience_Examples1/tree/master/statistics/kalman_filter)
