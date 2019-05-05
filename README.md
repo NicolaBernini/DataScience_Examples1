@@ -5,6 +5,10 @@ Examples about Data Science mainly in Python and R
 
 # Updates 
 
+## 2019-05-05 
+
+Added a [PR](https://github.com/NicolaBernini/DataScience_Examples1/pull/6) related to [Pandas Framework](https://github.com/NicolaBernini/DataScience_Examples1/tree/master/framework/pandas) and the this first commit is focused on common operations 
+
 ## 2019-04-26 
 
 Added a [PR](https://github.com/NicolaBernini/DataScience_Examples1/pull/5) to add a [Neural Networks Section](https://github.com/NicolaBernini/DataScience_Examples1/tree/neural_networks_exercise_20190426_1832_1/neural_networks) containing material about Neural Networks features reimplementation from scratch, Neural Networks Foundations and Theory and so on. 
