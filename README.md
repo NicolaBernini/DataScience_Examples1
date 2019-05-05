@@ -7,6 +7,8 @@ Examples about Data Science mainly in Python and R
 
 ## 2019-05-05 
 
+Added a [PR](https://github.com/NicolaBernini/DataScience_Examples1/pull/7) related to [Kaggle Section](https://github.com/NicolaBernini/DataScience_Examples1/tree/master/kaggle) starting with [Fake News Detection Challenge Solution](https://www.kaggle.com/nicolabernini/fakenewschallenge-solution1) 
+
 Added a [PR](https://github.com/NicolaBernini/DataScience_Examples1/pull/6) related to [Pandas Framework](https://github.com/NicolaBernini/DataScience_Examples1/tree/master/framework/pandas) and the this first commit is focused on common operations 
 
 ## 2019-04-26 
